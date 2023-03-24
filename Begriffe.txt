@@ -8,7 +8,7 @@ Inversion of Control (Dependency Injection)
 
 @Lazy
 	
-@PostConstruct @PreDestroy
+@PostConstruct @PreDestroy (Nicht bei Prototype)
 	Dreissatz beim Erzeugen 
 		1. Constructor
 		2. Setter- oder Fieldinjection
