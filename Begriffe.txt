@@ -1,12 +1,14 @@
 Inversion of Control (Dependency Injection)
+
 @Component
 	@Controller, @Service, @Repository
 	   @RestController
+
 @Scope (Prototype|Singleton)
 
 @RequestScope, @SessionScope
 
-@Lazy
+@Lazy (Nur bei singleton)
 	
 @PostConstruct @PreDestroy (Nicht bei Prototype)
 	Dreissatz beim Erzeugen 
@@ -16,7 +18,7 @@ Inversion of Control (Dependency Injection)
 		
 	@PreDestroy nur bei Singleton sinnvoll, weil Protoype nicht verwaltet wird
 	
-@Autowired
+@Autowired/ @Value
 	Standard by Type
 	Im Konfliktfall by Name
 	
